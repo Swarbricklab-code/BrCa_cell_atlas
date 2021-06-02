@@ -10,6 +10,14 @@ options(future.globals.maxSize = 25000 * 1048^2)
 plan("multisession", workers = 8)
 options(scipen=10000)
 
+map_colours <- c("#b2182b", "#1F618D",
+                 "#f4a582", "#9B59B6","#85929E", "#1c9099", "#74add1", "#053061",
+                 "#1b7837", "#b8e186", "#bebada", "#fed976",
+                 "#e7298a", "#47E3FF", "#FFBF47",
+                 "#A93226", "#270e26","orange",
+                 "#b8bc53", "#5628ce", "#fa909c",
+                 "#8ff331", "#FF6347", "#6347FF", "#556270", "#4ECDC4", "#C7F464", "#FF6B6B", "#C44D58", "#E3FF47","#FF4787")
+
 #Set wd
 gen_dir <- "/Single_cell/breast_atlas/"
 setwd(gen_dir)
