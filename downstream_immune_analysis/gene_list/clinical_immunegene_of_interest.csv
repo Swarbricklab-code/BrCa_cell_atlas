@@ -1,4 +1,4 @@
-﻿Common name,gene_name,Likely_cell_type,Inhibitory_or_Stimulatory,Receptor_Ligand
+﻿common_name,gene_name,Likely_cell_type,Inhibitory_or_Stimulatory,Receptor_Ligand
 PD1,PDCD1,T cell,Inhibitory,Receptor
 CTLA4,CTLA4,T cell,Inhibitory,Receptor
 TIM-3,HAVCR2,T cell,Inhibitory,Receptor
