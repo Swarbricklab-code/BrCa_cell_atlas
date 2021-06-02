@@ -16,7 +16,7 @@ setwd(gen_dir)
 
 #Read files
 seurat_obj <- readRDS(file = "BrCa_seurat_obj.Rdata")
-genes_list_file <- read.table(paste0("references/Clinical_immunegene_of_interest.csv"), header = T, sep = ","))
+genes_list_file <- read.table("gene_list/Clinical_immunegene_of_interest.csv"), header = T, sep = ",")
 
 
 #Subset out Myeloid and T-cells, split by celltype then run DGE for each BrCa subtype comparison
