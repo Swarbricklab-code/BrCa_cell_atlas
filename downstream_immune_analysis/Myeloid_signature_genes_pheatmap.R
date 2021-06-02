@@ -35,7 +35,7 @@ y_newdata <- data.frame(dutertre_gene_top20[c(1,7)])
 #Other studies gene list take top 20
 
 #Duetere gene list
-myeloid_multiple_gene_lists <- (read.table(paste0("references/Myeloid_multiple_study_gene_signature.csv"), header = T, sep = ","))
+myeloid_multiple_gene_lists <- (read.table(paste0("references/myeloid_multiple_study_gene_signature.csv"), header = T, sep = ","))
 multiple_myeloid_top20 <- myeloid_multiple_gene_lists %>%
   group_by(cluster) %>%
   top_n(n = 20, wt = gene)
