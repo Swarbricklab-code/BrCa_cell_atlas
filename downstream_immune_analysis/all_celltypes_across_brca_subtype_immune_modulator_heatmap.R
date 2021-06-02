@@ -3,7 +3,7 @@ library(tidyverse)
 library(viridis)
 library(pheatmap)
 
-genes_OI <- read.table(paste0("~/Single_cell/references/immune_modulator_gene_list.csv"), header = T, sep = ","))
+genes_OI <- read.table("/Single_cell/references/immune_modulator_gene_list.csv", header = T, sep = ",")
 seurat_obj <- readRDS(file = paste0(d_in_obj, "BrCa_seurat_obj.Rdata"))
 Idents(object = seurat_obj) <- "cell_subset"
 DefaultAssay(seurat_obj) <- "RNA"
