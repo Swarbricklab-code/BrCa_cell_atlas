@@ -1,0 +1,31 @@
+﻿Common name,gene_name,Likely_cell_type,Inhibitory_or_Stimulatory,Receptor_Ligand
+PD1,PDCD1,T cell,Inhibitory,Receptor
+CTLA4,CTLA4,T cell,Inhibitory,Receptor
+TIM-3,HAVCR2,T cell,Inhibitory,Receptor
+OX40,TNFRSF4,T cell,Stimulatory,Receptor
+CD40L,CD154,T cell,Stimulatory,Ligand
+ICOS,ICOS,T cell,Stimulatory,Receptor
+CD27,CD27,T cell,Stimulatory,Receptor
+BTLA,BTLA,T cell,Inhibitory,Receptor
+LAG-3,LAG3,T cell,Inhibitory,Receptor
+GITR,TNFRSR18,T cell,Stimulatory,Receptor
+4-1BB,TNFRSF9,T cell,Stimulatory,Receptor
+TIGIT,TIGIT,T cell,Inhibitory,Receptor
+DNAM-1,CD226,T cell,Stimulatory,Receptor
+A2AR,ADORA2A,T cell/Myeloid,Inhibitory,Receptor
+VISTA,VSIR,Myeloid,Inhibitory,Ligand
+B7-H3,CD276,Myeloid,Inhibitory,Ligand
+PDL1,CD274,Myeloid,Inhibitory,Ligand
+PDL2,PDCD1LG2,Myeloid,Inhibitory,Ligand
+CD80,CD80,Myeloid,Inhibitory,Ligand
+CD86,CD86,Myeloid,Inhibitory,Ligand
+Galectin-9,LGALS9,Myeloid,Inhibitory,Ligand
+OX40L,TNFSF4,Myeloid,Stimulatory,Ligand
+CD40,CD40,Myeloid,Stimulatory,Receptor
+B7RP1,ICOSLG,Myeloid,Stimulatory,Ligand
+CD70,CD70,Myeloid,Stimulatory,Ligand
+HVEM,TNFRSF14,Myeloid,Inhibitory,Ligand
+GITRL,TNFSF18,Myeloid,Stimulatory,Ligand
+4-1BBL,TNFSF9,Myeloid,Stimulatory,Ligand
+CD155,PVR,Myeloid,Inhibitory,Ligand
+CD112,NECTIN2,Myeloid,Stimulatory,Ligand
