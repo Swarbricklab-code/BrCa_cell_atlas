@@ -141,7 +141,7 @@ a <- ggdotchart(plot_data2, x = "gene", y = "avg_log2FC",
 
 a <- a+font("xy.text", size = 9, color = "black", face = "bold.italic")
 
-ggsave(a, dpi = 300, units = "in", width = 20, height = 10,  filename = "/Single_cell/breast_atlas/DGE_paired_comparison_receptor_ligand_genes.png")
-ggsave(a, dpi = 300, units = "in", width = 20, height = 10,  filename = "/Single_cell/breast_atlas/DGE_paired_comparison_receptor_ligand_genes.eps")
+ggsave(a, dpi = 300, units = "in", width = 20, height = 10,  filename = "/Single_cell/breast_atlas/DGE_paired_comparison_clinical_immunegene_of_interest_genes.png")
+ggsave(a, dpi = 300, units = "in", width = 20, height = 10,  filename = "/Single_cell/breast_atlas/DGE_paired_comparison_clinical_immunegene_of_interest_genes.eps")
 
 
