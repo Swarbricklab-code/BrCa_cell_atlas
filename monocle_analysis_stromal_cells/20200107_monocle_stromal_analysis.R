@@ -426,7 +426,101 @@ for(cluster in c("CAFs", "PVL", "Endo")){
 }
 
 
-# 08: SAVE MONOCLE ------------------------------------------------------------
+
+# 08: STATE ANNOTATION IN SEURAT OBJECTS ----------------------------------------------------
+
+for(cluster in c("CAFs", "PVL", "Endo")){
+  print(cluster)
+  
+  HSMM <- get(paste0("HSMM_",cluster))
+  temp_subset <- get(paste0("temp_subset_",cluster))
+  
+  temp_metadata_df <- pData(HSMM)
+  print(all.equal(rownames(temp_metadata_df), rownames(temp_subset@meta.data)))
+  temp_subset@meta.data$State <- temp_metadata_df$State
+  
+  print(table(temp_subset@meta.data$State))
+  
+  if(cluster == "CAFs"){
+    temp_subset@meta.data$State <- factor(temp_subset@meta.data$State,
+                                          levels = c(4,3,2,5,1))
+    Idents(temp_subset) <- "State"
+    temp_subset <- RenameIdents(temp_subset,
+                                `1` = "Myofibroblast-like CAFs 2",
+                                `2` = "Transitioning CAFs",
+                                `3` = "Inflammatory-CAFs 2",
+                                `4` = "Inflammatory-CAFs 1",
+                                `5` = "Myofibroblast-like CAFs 1")
+    temp_subset@meta.data$celltype_subset <- temp_subset@active.ident
+    
+    Idents(temp_subset) <- "State"
+    temp_subset <- RenameIdents(temp_subset,
+                                `1` = "Myofibroblast-like CAFs",
+                                `2` = "Myofibroblast-like CAFs", # transitioning cells called as differenaited in minor call
+                                `3` = "Inflammatory-CAFs",
+                                `4` = "Inflammatory-CAFs",
+                                `5` = "Myofibroblast-like CAFs")
+    temp_subset@meta.data$celltype_minor <- temp_subset@active.ident
+    
+    temp_major_label <- "CAFs"
+    temp_subset@meta.data$celltype_major <- temp_major_label
+    
+  }
+  if(cluster == "PVL"){
+    temp_subset@meta.data$State <- factor(temp_subset@meta.data$State,
+                                          levels = c(5,6,4,3,2,7,1))
+    Idents(temp_subset) <- "State"
+    temp_subset <- RenameIdents(temp_subset,
+                                `1` = "Differentiated PVL 3",
+                                `2` = "Transitioning PVL 2",
+                                `3` = "Differentiated PVL 1",
+                                `4` = "Transitioning PVL 1",
+                                `5` = "Immature PVL 1",
+                                `6` = "Immature PVL 2",
+                                `7` = "Differentiated PVL 2")
+    temp_subset@meta.data$celltype_subset <- temp_subset@active.ident
+    
+    Idents(temp_subset) <- "State"
+    temp_subset <- RenameIdents(temp_subset,
+                                `1` = "Differentiated PVL",
+                                `2` = "Differentiated PVL",
+                                `3` = "Differentiated PVL",
+                                `4` = "Differentiated PVL",
+                                `5` = "Immature PVL",
+                                `6` = "Immature PVL",
+                                `7` = "Differentiated PVL")
+    temp_subset@meta.data$celltype_minor <- temp_subset@active.ident
+    
+    temp_major_label <- "PVL"
+    temp_subset@meta.data$celltype_major <- temp_major_label
+    
+  }
+  if(cluster == "Endo"){
+    temp_subset@meta.data$State <- factor(temp_subset@meta.data$State,
+                                          levels = c(3,2,1))
+    Idents(temp_subset) <- "State"
+    temp_subset <- RenameIdents(temp_subset,
+                                `1` = "Tip-like endothelial cells",
+                                `2` = "Pericyte-like endothelial cells",
+                                `3` = "Stalk-like endothelial cells")
+    
+    temp_major_label <- "Endothelial"
+    temp_subset@meta.data$celltype_major <- temp_major_label
+    temp_subset@meta.data$celltype_minor <- temp_subset@active.ident
+    temp_subset@meta.data$celltype_subset <- temp_subset@active.ident
+    
+  }
+  
+  print(table(temp_subset@meta.data$celltype_major))
+  print(table(temp_subset@meta.data$celltype_minor))
+  print(table(temp_subset@meta.data$celltype_subset))
+  
+  n <- paste0("temp_subset_",cluster)
+  assign(n,
+         temp_subset)
+}
+
+# 09: SAVE MONOCLE ------------------------------------------------------------
 
 dir.create("monocle_new_ordering/Rdata/")
 
