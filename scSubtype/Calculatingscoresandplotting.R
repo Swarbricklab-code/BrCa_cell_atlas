@@ -1,3 +1,7 @@
+# Calculating sc50 scores
+#Aatish Thennavan Perou Lab
+
+# load packages
 library(Seurat)
 library(cowplot)
 
