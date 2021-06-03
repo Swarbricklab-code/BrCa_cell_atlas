@@ -1,9 +1,10 @@
-# MINI ATLAS FIGURE 1 - OVERVIEW
+# BRCA CELL ATLAS STUDY PLOTTING CODE:
+# FIGURE 1 - OVERVIEW
 # SUNNY Z WU
 #
 #
 # qrsh -pe smp 8 -l mem_requested=10G -P TumourProgression
-# source activate r_spatial
+# source activate r_seuratdev
 # R
 #
 # 01: SETUP -------------------------------------------------------------------
