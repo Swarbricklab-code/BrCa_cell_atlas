@@ -50,7 +50,7 @@ for(sample in unique(infoTable$patientid)){
     }
     
     # load stereoscope
-    sc.files <- c(paste0("to-sunny-zip/",tier,"/",temp_sampleid,"-count-matrix.tsv/",temp_file_string))
+    sc.files <- c(paste0("stsc/",tier,"/",temp_sampleid,"-count-matrix.tsv/",temp_file_string))
     sc.data.tnbc <- read.table(sc.files, sep = "\t", header = T, row.names = 1)
     
     # append
