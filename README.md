@@ -10,6 +10,7 @@ Raw scRNA-Seq data from this study has been deposited in the European Genome-Phe
 
 ## Spatial transcriptomics data
 All ST data from this study is available from the Zenodo data repository (DOI: 10.5281/zenodo.4739739 - https://zenodo.org/record/4739739). ST data from the Andersson et al. study can be downloaded from the Zenodo data repository (DOI: 10.5281/zenodo.3957257 - https://zenodo.org/record/3957257). For deconvolution of Visium data, please see the stereoscope method at https://github.com/almaan/stereoscope from the Andersson et al (2020) study. https://www.nature.com/articles/s42003-020-01247-y
+See [this issue thread](https://github.com/Swarbricklab-code/BrCa_cell_atlas/issues/3) for a discussion on how to load the spatial data from Zenodo into Seurat.
 
 # Contacts
 All other relevant data and analysis are available from the authors upon request. For further enquires, please either raise an issue via GitHub or email John Reeves (Data Manager - j.reeves(at)garvan.org.au), Sunny Wu (Lead Author - s.wu(at)garvan.org.au) or Alexander Swarbrick (Lab Head - a.swarbrick(at)garvan.org.au).
