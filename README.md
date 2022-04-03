@@ -2,8 +2,10 @@
 This repository contains code related to data processing and downstream analysis associated with the study "A single-cell and spatially resolved atlas of human breast cancers" at Nature Genetics. 
 
 # Data Availability
-## processed & filtered scRNA-Seq data
-All processed scRNA-seq data is available for in-browser exploration and download through the Broad Single-Cell portal at https://singlecell.broadinstitute.org/single_cell/study/SCP1039. Processed data is also available on GEO (GSE176078).
+## Processed & filtered scRNA-Seq data and CITE data
+All processed scRNA-seq data and is available for in-browser exploration and download through the Broad Single-Cell portal at https://singlecell.broadinstitute.org/single_cell/study/SCP1039. 
+CITE data can also be downloaded from this portal, although it cannot be explored interactively at this point.
+Processed data is also available on GEO (GSE176078).
 
 ## Raw scRNA-Seq data
 Raw scRNA-Seq data from this study has been deposited in the European Genome-Phenome Archive (EGA), which is hosted by the EBI and the CRG, under the accession code EGAS00001005173. 
