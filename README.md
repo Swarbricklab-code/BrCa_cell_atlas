@@ -1,5 +1,5 @@
 # BrCa_cell_atlas
-This repository contains code related to data processing and downstream analysis associated with the study "A single-cell and spatially resolved atlas of human breast cancers" at Nature Genetics. 
+This repository contains code related to data processing and downstream analysis associated with the study "[A single-cell and spatially resolved atlas of human breast cancers](https://www.nature.com/articles/s41588-021-00911-1)" at Nature Genetics. 
 
 # Data Availability
 ## Processed & filtered scRNA-Seq data and CITE data
