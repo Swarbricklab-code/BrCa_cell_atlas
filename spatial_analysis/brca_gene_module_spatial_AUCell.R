@@ -41,7 +41,7 @@ dir.create("output")
 se.list <- readRDS("/share/ScratchGeneral/sunwu/projects/MINI_ATLAS_PROJECT/spatial/RDATA_Visium_brca_objects_stereoscope.Rdata")
 
 # load gene module gene sets
-temp_metagenes <- read.delim("/share/ScratchGeneral/sunwu/projects/MINI_ATLAS_PROJECT/Sept2019/11_visium_brca_metagenes/gene_clusters.txt")
+temp_metagenes <- read.delim("spatial_analysis/gene_clusters.txt")
 
 # load stereoscope cluster IDs per annotation tier
 temp_sample_id <- c(2,5,7:10)
