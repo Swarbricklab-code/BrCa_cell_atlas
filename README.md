@@ -9,7 +9,7 @@ CITE data can also be downloaded from this portal, although it cannot be explore
 Processed data is also available on GEO ([GSE176078](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE176078)).
 
 ## Raw scRNA-Seq data
-Raw scRNA-Seq data from this study has been deposited in the European Genome-Phenome Archive (EGA), which is hosted by the EBI and the CRG, under the accession code EGAS00001005173. 
+Raw bulk RNA-seq data and scRNA-Seq data from this study has been deposited in the European Genome-Phenome Archive (EGA), which is hosted by the EBI and the CRG, under the accession code [EGAS00001005173](https://ega-archive.org/studies/EGAS00001005173). 
 
 ## Spatial transcriptomics data
 All ST data from this study is now available on [CELLxGENE](https://cellxgene.cziscience.com/collections/65db5560-7aeb-4c66-b150-5bd914480eb8).
